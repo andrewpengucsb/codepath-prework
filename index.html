@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Simon Says</h1>
+    
+    <p id="introText">
+      Welcome to the game! Press start to begin or click rules to learn how to play!
+    </p>
+
+    <p id="rulesText" class="hidden">
+      After you press start, a pattern will be played. You must repeat the pattern back in order to win! There are 8 levels that progresseively get faster as you play on. If you make a mistake, the game will end! If you complete all 8 stages, you will win! Good Luck!
+    </p>
+    
+    <!-- start and stop buttons -->
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+    <button class="hidden" id="stopBtn" onclick="stopGame()">
+      Stop
+    </button>
+    
+    <!-- additional rules and return button -->
+    <button id="rulesBtn" onclick="showRules()">
+      Rules
+    </button>
+    <button class="hidden" id="returnBtn" onclick="hideRules()">
+      Return
+    </button>
+    
+    <!-- game buttons -->
+    <div id="gameButtonArea">
+      <button id="button1" onmousedown="startTone(1)" onmouseup="stopTone()" onclick="guess(1)"></button>
+      <button id="button2" onmousedown="startTone(2)" onmouseup="stopTone()" onclick="guess(2)"></button>
+      <button id="button3" onmousedown="startTone(3)" onmouseup="stopTone()" onclick="guess(3)"></button>
+      <button id="button4" onmousedown="startTone(4)" onmouseup="stopTone()" onclick="guess(4)"></button>
+    </div>
+    
+  </body>
+</html>
