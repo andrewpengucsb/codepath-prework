@@ -1,0 +1,43 @@
+/* CSS files add styling rules to your content */
+
+/*general text parameters*/
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: slategrey;
+  color: white;
+}
+
+/*header parameters*/
+h1 {
+  font-style: verdana, arial, sans-serif;
+}
+
+/*general button parameters*/
+button {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+/*game button parameters*/
+#gameButtonArea > button {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+/*game button color parameters*/
+#button1 {background: lightgreen;}
+#button1:active, #button1.lit {background: green;}
+#button2 {background: lightblue;}
+#button2:active, #button2.lit {background: blue;}
+#button3 {background: pink;}
+#button3:active, #button3.lit {background: red;}
+#button4 {background: lightyellow;}
+#button4:active, #button4.lit {background: yellow;}
+
+/*hiding stop buttom*/
+.hidden {
+  display: none;
+}
